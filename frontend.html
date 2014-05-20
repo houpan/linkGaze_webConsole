@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	   <title>WebSockets - Simple chat</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<style>
+		* { font-family:tahoma; font-size:20px; padding:0px; margin:0px; }
+		.p { line-height:18px; }
+		div { padding:5px;  width:1000px; margin-left:auto; margin-right:auto;}
+		.btn { padding:5px; background:#ddd; border-radius:5px; 
+				   border:1px solid #CCC; margin-top:10px; height: 160px; width:200px;}
+		#content { padding:5px; background:#ddd; border-radius:5px; overflow-y: scroll;
+				   border:1px solid #CCC; margin-top:10px; height: 160px; }
+		#input { border-radius:2px; border:1px solid #ccc;
+				 margin-top:10px; padding:5px; width:400px;  }
+		#status { width:88px; display:block; float:left; margin-top:15px; }
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>模擬眼動儀偵測結果</p>
+			<input class="btn" id="btnLookGlass" type="button" value="Looking Glass">
+			<input class="btn" id="btnLookForward" type="button" value="Looking Forward">
+			<input class="btn" id="btnLookMobile" type="button" value="Looking Mobile">
+		</div>
+		<div>
+			<p>Notification</p>
+			<input class="btn" id= "btnNotif_idiot" type="button" value="花痴">
+			<input class="btn" id= "btnNotif_HR" type="button" value="HR">
+			<input class="btn" id= "btnNotif_friend" type="button" value="好朋友">
+		</div>
+		<div>
+			<p>Note. 重新整理網頁會重置websocket</p>
+		</div>
+
+        <script src="chat-frontend.js"></script>
+	</body>
+</html>
